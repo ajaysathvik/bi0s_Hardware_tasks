@@ -125,36 +125,21 @@ tr short for transilate converts a specified convention to another order)
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
 ## LEVEL 12 --> 13
-#### The motive of this level is to
-login: ssh bandit7@bandit.labs.overthewire.org -p 2220
+#### The motive of this level is to create a directory under tmp(a.k.a temporary) and uncompress a multiple time compressed file using various uncompressions.
+login: ssh bandit12@bandit.labs.overthewire.org -p 2220
 ls
 cat data.txt
-mkdir /tmp/newfile666
-cp data.txt /tmp/new123
-cd /tmp/newfile666
-xxd -r data.txt data
-file data
-mv data data.gz
-gzip -d data.gz
-file data
-mv data data.bz2
-bzip2 -d data.bz2
-file data
-mv data data.gz
-gzip -d data.gz
-file data
-tar -x -f data
-file data5.bin
-tar -x -f data5.bin
-file data6.bin
-bzip2 -d data6.bin
-file data6.bin.out
-tar -x -f data6.bin.out
-file data8.bin
-mv data8.bin data8.gz
-gzip -d data8.gz
-file data8
-cat data
+mkdir /tmp/b4st4rd
+cp data.txt /tmp/b4st4rd
+xxd -r data.txt > cat file.bin
+file file.bin
+mv file.bin schnider.gz
+gzip -d schnider.gz
+ls --> schnider
+file schnider
+mv schnider schnider.bz
+bzip2 -d schnider.bz
+
 
 
 
