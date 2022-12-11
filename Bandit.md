@@ -90,9 +90,10 @@ TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
 
 ## LEVEL 8 --> 9
-#### The motive of this level is to find the line taht only repeates once.
+#### The motive of this level is to find the line that only repeates once.
 ls
-sort data.txt | uniq -u
+sort data.txt | uniq -u 
+ sort command sorts the text in data.txt and after that we use uniq -u here uniq command removes the repeated lines by default while the -u option onlu retrieves the unique line.
 
 ## LEVEL 0 --> 1
 ls
