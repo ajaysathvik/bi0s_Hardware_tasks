@@ -22,7 +22,7 @@ cat readme.txt<br />
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL<br />
 
 #### Learned:<br />
-ls , cat commands.
+     ls , cat commands.
 
 
 ## LEVEL 1 --> 2
@@ -36,7 +36,7 @@ cat ./-<br />
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi<br />
 
 #### Learned:<br />
-./ command executes the file
+     ./ command executes the file
 
 ## LEVEL 2 --> 3
 #### The motive of this level is to open a file which has spaces in its name.<br />
@@ -50,7 +50,7 @@ cat spaces\ in\ this\ filename<br />
 aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG<br />
 
 #### Learned:<br />
-Forward slashes before a space in a filename with spaces can void the error while using the file.
+     Forward slashes before a space in a filename with spaces can void the error while using the file.
 
 ## LEVEL 3 --> 4
 #### The motive of this level is to find a hidden file in the inhere directory.
@@ -62,7 +62,7 @@ cat .hidden (where the . specifies that the file is hidden)<br />
 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe<br />
 
 #### Learned:<br />
-How to view and open a hidden file.
+     How to view and open a hidden file.
 
 ## LEVEL 4 --> 5
 #### The motive of this level is to access the ony human-readable file in the inhere directory.
@@ -75,8 +75,8 @@ cat ./-file07 to see the password.<br />
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR<br />
 
 #### Learned:<br />
-Working of file command.<br />
-Astar key is used to select all.<br />
+      Working of file command.<br />
+      Astar key is used to select all.<br />
 
 ## LEVEL 5 --> 6
 #### The motive of this level is to access a file with some specific characteristics.
