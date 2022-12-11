@@ -22,7 +22,7 @@ NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 
 ## LEVEL 1 --> 2
-####The motive of this level is to access a file called - from the home directory.
+#### The motive of this level is to access a file called - from the home directory.
  login :ssh bandit1@bandit.labs.overthewire.org -p 2220
         ls to list the files in the cwd.We see a file named - or we use ls -a to view hidden files.
         cat ./- is used to view the file after making it executable.
@@ -32,7 +32,7 @@ rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
 
 
 ## LEVEL 2 --> 3
-####The motive of this level is to open a file which has spaces in its name.
+#### The motive of this level is to open a file which has spaces in its name.
 login: ssh bandit2@bandit.labs.overthewire.org -p 2220
 ls to list the files in the cwd.
 cat spaces in this filename with forward slashes before the spaces start.
@@ -42,16 +42,19 @@ cat spaces\ in\ this\ filename
 aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
 
 ## LEVEL 3 --> 4
-####The motive of this level is to
-ls
-cd inhere
-ls -a
-cat .hidden
+#### The motive of this level is to find a hidden file in the inhere directory.
+login: ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls (to list the files in the cwd.)
+cd (to change the cwd to the inhere directory.)
+ls -a (to find the hidden file.)
+cat .hidden (where the . specifies that the file is hidden)
 
-## LEVEL 0 --> 1
-ls
-cd inhere
-file *
+## LEVEL 4 --> 5
+#### The motive of this level is to access the ony human-readable file in the inhere directory.
+login: ssh bandit4@bandit.labs.overthewire.org -p 2220
+ls to list the files in the cwd. 
+cd inhere to change cwd.
+file * 
 file ./*
 cat ./-file07
 
