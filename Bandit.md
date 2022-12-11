@@ -9,7 +9,7 @@ We specify the username@host.server<br />
 -p is for specifiying the port.<br />
  
  #### Learned:<br />
-       _Format for using ssh._<br />
+              Format for using ssh.
 
 ## LEVEL 0 --> 1
 #### The motive of this level is to access a text file on the server.<br />
@@ -75,8 +75,8 @@ cat ./-file07 to see the password.<br />
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR<br />
 
 #### Learned:<br />
-      Working of file command.<br />
-      Astar key is used to select all.<br />
+      Working of file command.
+      Astar key is used to select all.
 
 ## LEVEL 5 --> 6
 #### The motive of this level is to access a file with some specific characteristics.
@@ -123,8 +123,8 @@ sort data.txt | uniq -u <br />
 EN632PlfYiZbn3PhVK3XOGSlNInNE00t<br />
 
 #### earned:<br />
-     sort command to sort the file.<br />
-     uniq -u command to get a unique non-reccuring line of text.<br />
+     sort command to sort the file.
+     uniq -u command to get a unique non-reccuring line of text.
 
 ## LEVEL 9 --> 10
 #### The motive of this level is to find the only human-readable strings in the string preceded by many "=". 
@@ -205,8 +205,8 @@ cat dark_schnider<br />
 The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw<br />
 
 #### Learned:<br />
-    xxd -r command to covert a hexadump file to bin file.<br />
-    How to uncompress different types of files.<br />
+    xxd -r command to covert a hexadump file to bin file.
+    How to uncompress different types of files.
 
 
 ## LEVEL 13 --> 14
@@ -218,8 +218,8 @@ cat /etc/bandit_pass/bandit14<br />
 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq<br />
 
 #### Learned:<br />
-    How to port to a server while in another server using ssh.<br />
-    It requires the rsa encrypted private key of the other server.<br />
+    How to port to a server while in another server using ssh.
+    It requires the rsa encrypted private key of the other server.
 
 ## LEVEL 14 --> 15
 #### The motive of this level is to submit the password of current level to port 30000 of localhost.
