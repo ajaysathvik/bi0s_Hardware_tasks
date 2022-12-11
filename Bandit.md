@@ -177,6 +177,18 @@ fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 ## LEVEL 14 --> 15
 #### The motive of this level is to submit the password of current level to port 30000 of localhost.
 login: ssh bandit14@bandit.labs.overthewire.org -p 2220
+telnet localhost 30000
+Enter the password of the previous level.
+Telnet is an application network protocol enables user communication with a remote computer via a text-based interface.
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+
+## LEVEL 14 --> 15
+#### The motive of this level is to port to 30001 on localhost
+openssl s_client -connect localhost:30001
+Enter the password of the current level.
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
 
 
   
