@@ -12,182 +12,186 @@ We specify the username@host.server<br />
        _Format for using ssh._<br />
 
 ## LEVEL 0 --> 1
-#### The motive of this level is to access a text file on the server.
- login: ssh bandit0@bandit.labs.overthewire.org -p 2220
+#### The motive of this level is to access a text file on the server.<br />
+ login: <br />
+       ssh bandit0@bandit.labs.overthewire.org -p 2220<br />
         Used the ls command to list the files in the cwd.
         Then we will use cat to see the contents of the file.
-ls
-cat readme.txt
-NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+ls<br />
+cat readme.txt<br />
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL<br />
 
 
 ## LEVEL 1 --> 2
-#### The motive of this level is to access a file called - from the home directory.
- login :ssh bandit1@bandit.labs.overthewire.org -p 2220
-        ls to list the files in the cwd.We see a file named - or we use ls -a to view hidden files.
-        cat ./- is used to view the file after making it executable.
-ls
-cat ./-
-rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+#### The motive of this level is to access a file called - from the home directory.<br />
+ login :<br />
+ ssh bandit1@bandit.labs.overthewire.org -p 2220<br />
+        ls to list the files in the cwd.We see a file named - or we use ls -a to view hidden files.<br />
+        cat ./- is used to view the file after making it executable.<br />
+ls<br />
+cat ./-<br />
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi<br />
 
 
 ## LEVEL 2 --> 3
-#### The motive of this level is to open a file which has spaces in its name.
-login: ssh bandit2@bandit.labs.overthewire.org -p 2220
-ls to list the files in the cwd.
-cat spaces in this filename with forward slashes before the spaces start.
+#### The motive of this level is to open a file which has spaces in its name.<br />
+login: 
+ssh bandit2@bandit.labs.overthewire.org -p 2220<br />
+ls to list the files in the cwd.<br />
+cat spaces in this filename with forward slashes before the spaces start.<br />
 
-ls
-cat spaces\ in\ this\ filename
-aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+ls<br />
+cat spaces\ in\ this\ filename<br />
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG<br />
 
 ## LEVEL 3 --> 4
 #### The motive of this level is to find a hidden file in the inhere directory.
-login: ssh bandit3@bandit.labs.overthewire.org -p 2220
-ls (to list the files in the cwd.)
-cd (to change the cwd to the inhere directory.)
-ls -a (to find the hidden file.)
-cat .hidden (where the . specifies that the file is hidden)
-2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+login: ssh bandit3@bandit.labs.overthewire.org -p 2220<br />
+ls (to list the files in the cwd.)<br />
+cd (to change the cwd to the inhere directory.)<br />
+ls -a (to find the hidden file.)<br />
+cat .hidden (where the . specifies that the file is hidden)<br />
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe<br />
 
 ## LEVEL 4 --> 5
 #### The motive of this level is to access the ony human-readable file in the inhere directory.
-login: ssh bandit4@bandit.labs.overthewire.org -p 2220
-ls to list the files in the cwd. 
-cd inhere to change cwd. 
-file ./* to exe all(*) the files and find the file type.
-We see that only one file is in the ascii text format.
-cat ./-file07 to see the password.
-lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+login: ssh bandit4@bandit.labs.overthewire.org -p 2220<br />
+ls to list the files in the cwd. <br />
+cd inhere to change cwd. <br />
+file ./* to exe all(*) the files and find the file type.<br />
+We see that only one file is in the ascii text format.<br />
+cat ./-file07 to see the password.<br />
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR<br />
 
 
 ## LEVEL 5 --> 6
 #### The motive of this level is to access a file with some specific characteristics.
-login: ssh bandit5@bandit.labs.overthewire.org -p 2220
-ls to list the files in the cwd.
-cd inhere to change cwd.
-ls to list the files in the cwd.
-find -readable -size 1033c ! -executable (to find a readable file with size 1033bytes which is not executable.)
-cat maybehere07/.file2
-P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+login: ssh bandit5@bandit.labs.overthewire.org -p 2220<br />
+ls to list the files in the cwd.<br />
+cd inhere to change cwd.<br />
+ls to list the files in the cwd.<br />
+find -readable -size 1033c ! -executable (to find a readable file with size 1033bytes which is not executable.)<br />
+cat maybehere07/.file2<br />
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU<br />
 
 
 ## LEVEL 6 --> 7
 #### The motive of this level is to access a file with some specific characteristics.
-login: ssh bandit6@bandit.labs.overthewire.org -p 2220
-find / -type f -user bandit7 -group bandit6 -size 33c 2> /dev/null (here we specified the characteristics and 2>/dev/null redirects errors to the void)
-./var/lib/dpkg/info/bandit7.password
-cat ./var/lib/dpkg/info/bandit7.password
-z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+login: ssh bandit6@bandit.labs.overthewire.org -p 2220<br />
+find / -type f -user bandit7 -group bandit6 -size 33c 2> /dev/null (here we specified the characteristics and 2>/dev/null redirects errors to the void)<br />
+./var/lib/dpkg/info/bandit7.password<br />
+cat ./var/lib/dpkg/info/bandit7.password<br />
+z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S<br />
 
 ## LEVEL 7 --> 8
 #### The motive of this level is to use grep and cat simultaneously.
-login: ssh bandit7@bandit.labs.overthewire.org -p 2220
-ls to list the files in the cwd.
-cat data.txt | grep millionth
-####Here what we did was use the piping operator which can redirect the output of one command to the next.
-TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+login: ssh bandit7@bandit.labs.overthewire.org -p 2220<br />
+ls to list the files in the cwd.<br />
+cat data.txt | grep millionth<br />
+####Here what we did was use the piping operator which can redirect the output of one command to the next.<br /><br />
+TESKZC0XvTetK0S9xNwm25STk5iWrBvP<br />
 
 
 ## LEVEL 8 --> 9
 #### The motive of this level is to find the line that only repeates once.
-login: ssh bandit8@bandit.labs.overthewire.org -p 2220
-ls
-sort data.txt | uniq -u 
- sort command sorts the text in data.txt and after that we use uniq -u here uniq command removes the repeated lines by default while the -u option only retrieves the unique line.
-EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+login: ssh bandit8@bandit.labs.overthewire.org -p 2220<br />
+ls<br />
+sort data.txt | uniq -u <br />
+ sort command sorts the text in data.txt and after that we use uniq -u here uniq command removes the repeated lines by default while the -u option only retrieves the unique line.<br />
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t<br />
 
 ## LEVEL 9 --> 10
 #### The motive of this level is to find the only human-readable strings in the string preceded by many "=". 
-login: ssh bandit9@bandit.labs.overthewire.org -p 2220
-ls
-cat data.txt | strings data.txt | grep "="
-Strings command brings out the only readable strings in the file data.txt and grep is used to get the text which is preceded by =.
-G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+login: ssh bandit9@bandit.labs.overthewire.org -p 2220<br />
+ls<br />
+cat data.txt | strings data.txt | grep "="<br />
+Strings command brings out the only readable strings in the file data.txt and grep is used to get the text which is preceded by =.<br />
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s<br />
 
 
 ## LEVEL 10 --> 11
 #### The motive of this level is to decode the base64 encrypted text.
-login: ssh bandit10@bandit.labs.overthewire.org -p 2220
-ls
-cat data.txt
-base64 -d data.txt 
-Here -d option specifies 'Decode'.
-6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+login: ssh bandit10@bandit.labs.overthewire.org -p 2220<br />
+ls<br />
+cat data.txt<br />
+base64 -d data.txt <br />
+Here -d option specifies 'Decode'.<br />
+6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM<br />
 
 ## LEVEL 11 --> 12
 #### The motive of this level is to decode a ROT13 cipher encrypted text to obtain the password.
-login: ssh bandit11@bandit.labs.overthewire.org -p 2220
-ls
-cat data.txt
-cat random.txt | tr "[a-z][A-Z]" "[n-za-m][N-ZA-M]"
-tr short for transilate converts a specified convention to another order)
-JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+login:
+ssh bandit11@bandit.labs.overthewire.org -p 2220<br />
+ls<br />
+cat data.txt<br />
+cat random.txt | tr "[a-z][A-Z]" "[n-za-m][N-ZA-M]"<br />
+tr short for transilate converts a specified convention to another order)<br />
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv<br />
 
 ## LEVEL 12 --> 13
 #### The motive of this level is to create a directory under tmp(a.k.a temporary) and uncompress a multiple time compressed file using various uncompressions.
-login: ssh bandit12@bandit.labs.overthewire.org -p 2220
-ls
-cat data.txt
-mkdir /tmp/b4st4rd
-cp data.txt /tmp/b4st4rd
-xxd -r data.txt > cat file.bin
-file file.bin
-mv file.bin schnider.gz
-gzip -d schnider.gz
-ls --> schnider
-file schnider
-mv schnider schnider.bz
-bzip2 -d schnider.bz
-file schnider
-mv schnider schnider.gz
-gzip -d schnider.gz
-ls --> schnider
-file schnider
-mv schnider schnider.tar
-tar -xf schnider.tar
-ls --> data5.bin
-file data5.bin
-mv data5.bin schnider.tar
-tar -xf schnider.tar
-ls --> data6.bin
-file data6.bin
-mv data6.bin dark_schnider.bz
-bzip2 -d dark_schnider.bz
-file dark_schnider
-mv dark_schnider dark_schnider.tar
-tar -xf dark_schnider.tar
-ls --> data8.bin
-file data.bin 
-mv data.bin dark_schnider.gz
-gzip -d dark_schnider.gz
-file dark_schnider -->dark_schnider ascii text
-cat dark_schnider
-The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+login: ssh bandit12@bandit.labs.overthewire.org -p 2220<br />
+ls<br />
+cat data.txt<br />
+mkdir /tmp/b4st4rd<br />
+cp data.txt /tmp/b4st4rd<br />
+xxd -r data.txt > cat file.bin<br />
+file file.bin<br />
+mv file.bin schnider.gz<br />
+gzip -d schnider.gz<br />
+ls --> schnider<br />
+file schnider<br />
+mv schnider schnider.bz<br />
+bzip2 -d schnider.bz<br />
+file schnider<br />
+mv schnider schnider.gz<br />
+gzip -d schnider.gz<br />
+ls --> schnider<br />
+file schnider<br />
+mv schnider schnider.tar<br />
+tar -xf schnider.tar<br />
+ls --> data5.bin<br />
+file data5.bin<br />
+mv data5.bin schnider.tar<br />
+tar -xf schnider.tar<br />
+ls --> data6.bin<br />
+file data6.bin<br />
+mv data6.bin dark_schnider.bz<br />
+bzip2 -d dark_schnider.bz<br />
+file dark_schnider<br />
+mv dark_schnider dark_schnider.tar<br />
+tar -xf dark_schnider.tar<br />
+ls --> data8.bin<br />
+file data.bin <br />
+mv data.bin dark_schnider.gz<br />
+gzip -d dark_schnider.gz<br />
+file dark_schnider -->dark_schnider ascii text<br />
+cat dark_schnider<br />
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw<br />
 
 
 ## LEVEL 13 --> 14
 #### The motive of this level is to change user to bandit14 to access a file specifically for bandit14, here u dont have to get the pass but just have to access the bandit14.
-login: ssh bandit13@bandit.labs.overthewire.org -p 2220
-ls --> sshkey.private
-ssh bandit14@localhost -i sshkey.private -p 2220
-cat /etc/bandit_pass/bandit14
-fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+login: ssh bandit13@bandit.labs.overthewire.org -p 2220<br />
+ls --> sshkey.private<br />
+ssh bandit14@localhost -i sshkey.private -p 2220<br />
+cat /etc/bandit_pass/bandit14<br />
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq<br />
 
 ## LEVEL 14 --> 15
 #### The motive of this level is to submit the password of current level to port 30000 of localhost.
-login: ssh bandit14@bandit.labs.overthewire.org -p 2220
-telnet localhost 30000
-Enter the password of the previous level.
-Telnet is an application network protocol enables user communication with a remote computer via a text-based interface.
-jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+login: ssh bandit14@bandit.labs.overthewire.org -p 2220<br />
+telnet localhost 30000<br />
+Enter the password of the previous level.<br />
+Telnet is an application network protocol enables user communication with a remote computer via a text-based interface.<br />
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt<br />
 
 
 ## LEVEL 14 --> 15
 #### The motive of this level is to port to 30001 on localhost
-openssl s_client -connect localhost:30001
-Enter the password of the current level.
-JQttfApK4SeyHwDlI9SXGR50qclOAil1
+openssl s_client -connect localhost:30001<br />
+Enter the password of the current level.<br /><br />
+JQttfApK4SeyHwDlI9SXGR50qclOAil1<br />
 
 
 
