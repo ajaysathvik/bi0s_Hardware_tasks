@@ -168,8 +168,15 @@ The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 ## LEVEL 13 --> 14
 #### The motive of this level is to change user to bandit14 to access a file specifically for bandit14, here u dont have to get the pass but just have to access the bandit14.
-login: ssh bandit12@bandit.labs.overthewire.org -p 2220
+login: ssh bandit13@bandit.labs.overthewire.org -p 2220
+ls --> sshkey.private
+ssh bandit14@localhost -i sshkey.private -p 2220
+cat /etc/bandit_pass/bandit14
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
+## LEVEL 14 --> 15
+#### The motive of this level is to submit the password of current level to port 30000 of localhost.
+login: ssh bandit14@bandit.labs.overthewire.org -p 2220
 
 
   
