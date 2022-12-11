@@ -157,7 +157,13 @@ bzip2 -d dark_schnider.bz
 file dark_schnider
 mv dark_schnider dark_schnider.tar
 tar -xf dark_schnider.tar
-
+ls --> data8.bin
+file data.bin 
+mv data.bin dark_schnider.gz
+gzip -d dark_schnider.gz
+file dark_schnider -->dark_schnider ascii text
+cat dark_schnider
+The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 
 
