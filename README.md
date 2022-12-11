@@ -40,7 +40,21 @@ IRC orInternet relay chat is basically for short messages
    The option was -a or --text which is similar to --binary-files=text option.
    
 ## DOZ3N_IS_K3Y
-  
+   I used grep with flag on the string and got an encrypted file, which we decrypted to get the flag
+   
+## xoring
+   In it I used the python base code which was given and altered it to give the xored output.
+   
+## Lifetimesettlement
+   I identified the cipher as spoon cipher using a cipher identifier.
+   Decrypted it using spoon dcode.
+   
+   Learned:
+     What happens
+   
+## Caesercipher
+  I identified the cipher to be caeser cipher using a cipher identifier.
+  Decrypted it using ceaser decoder.
    
    
    
