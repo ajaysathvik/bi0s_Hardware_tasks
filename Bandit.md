@@ -139,6 +139,25 @@ ls --> schnider
 file schnider
 mv schnider schnider.bz
 bzip2 -d schnider.bz
+file schnider
+mv schnider schnider.gz
+gzip -d schnider.gz
+ls --> schnider
+file schnider
+mv schnider schnider.tar
+tar -xf schnider.tar
+ls --> data5.bin
+file data5.bin
+mv data5.bin schnider.tar
+tar -xf schnider.tar
+ls --> data6.bin
+file data6.bin
+mv data6.bin dark_schnider.bz
+bzip2 -d dark_schnider.bz
+file dark_schnider
+mv dark_schnider dark_schnider.tar
+tar -xf dark_schnider.tar
+
 
 
 
