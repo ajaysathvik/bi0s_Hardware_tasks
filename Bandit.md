@@ -166,6 +166,9 @@ cat dark_schnider
 The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 
+## LEVEL 13 --> 14
+#### The motive of this level is to change user to bandit14 to access a file specifically for bandit14, here u dont have to get the pass but just have to access the bandit14.
+login: ssh bandit12@bandit.labs.overthewire.org -p 2220
 
 
 
