@@ -106,22 +106,25 @@ Strings command brings out the only readable strings in the file data.txt and gr
 G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
 
 
-## LEVEL 0 --> 1
-#### The motive of this level is to
-login: ssh bandit7@bandit.labs.overthewire.org -p 2220
+## LEVEL 10 --> 11
+#### The motive of this level is to decode the base64 encrypted text.
+login: ssh bandit10@bandit.labs.overthewire.org -p 2220
 ls
 cat data.txt
-base64 -d data.txt
+base64 -d data.txt 
+Here -d option specifies 'Decode'.
+6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
 
-## LEVEL 0 --> 1
-#### The motive of this level is to
-login: ssh bandit7@bandit.labs.overthewire.org -p 2220
+## LEVEL 11 --> 12
+#### The motive of this level is to decode a ROT13 cipher encrypted text to obtain the password.
+login: ssh bandit11@bandit.labs.overthewire.org -p 2220
 ls
 cat data.txt
-used CyberChef cipher to decode ROT13
-https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)
+cat random.txt | tr "[a-z][A-Z]" "[n-za-m][N-ZA-M]"
+tr short for transilate converts a specified convention to another order)
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
 
-## LEVEL 0 --> 1
+## LEVEL 12 --> 13
 #### The motive of this level is to
 login: ssh bandit7@bandit.labs.overthewire.org -p 2220
 ls
