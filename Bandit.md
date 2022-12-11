@@ -91,27 +91,39 @@ TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
 ## LEVEL 8 --> 9
 #### The motive of this level is to find the line that only repeates once.
+login: ssh bandit8@bandit.labs.overthewire.org -p 2220
 ls
 sort data.txt | uniq -u 
- sort command sorts the text in data.txt and after that we use uniq -u here uniq command removes the repeated lines by default while the -u option onlu retrieves the unique line.
+ sort command sorts the text in data.txt and after that we use uniq -u here uniq command removes the repeated lines by default while the -u option only retrieves the unique line.
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 
-## LEVEL 0 --> 1
+## LEVEL 9 --> 10
+#### The motive of this level is to find the only human-readable strings in the string preceded by many "=". 
+login: ssh bandit9@bandit.labs.overthewire.org -p 2220
 ls
-cat data.txt | grep "="
-strings data.txt
+cat data.txt | strings data.txt | grep "="
+Strings command brings out the only readable strings in the file data.txt and grep is used to get the text which is preceded by =.
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
 
 ## LEVEL 0 --> 1
+#### The motive of this level is to
+login: ssh bandit7@bandit.labs.overthewire.org -p 2220
 ls
 cat data.txt
 base64 -d data.txt
 
 ## LEVEL 0 --> 1
+#### The motive of this level is to
+login: ssh bandit7@bandit.labs.overthewire.org -p 2220
 ls
 cat data.txt
 used CyberChef cipher to decode ROT13
 https://gchq.github.io/CyberChef/#recipe=ROT13(true,true,false,13)
 
 ## LEVEL 0 --> 1
+#### The motive of this level is to
+login: ssh bandit7@bandit.labs.overthewire.org -p 2220
 ls
 cat data.txt
 mkdir /tmp/newfile666
