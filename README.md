@@ -1,11 +1,11 @@
 # bi0s_Hardware_tasks
-The tasks that I have completed.
+#The repository of 4RCH_30N's Completed tasks.
 
 ## SANITY_CHECK
-sanity check is basically filling a google form.
-I learned how to fill a google form.
+Sanity check is basically filling a google form.
 
 Learned: 
+        I learned how to fill a google form.
         That I am sane up to a point.
 
 ## SANITY_CHECK-1
@@ -17,7 +17,8 @@ Learned:
  
 
 ## SANITY_CHECK-2
-sanity check-2 also helped me do google forms
+Sanity check-2 also helped me do google forms
+
 Learned :  
          That I am sane up to a point(Sanity check last one completed).
 
@@ -31,7 +32,7 @@ Learned: What an IRC is.
 ## Wifi_Hacking-1
    I accessed the handshake file using wireshark to open up the package by searching for its authentication protocol over the lan.
    I found the protocol(from the protocols wireshark has captured) in which the identities are shared.
-   After opening up the handshake we identify the wpa key data which was exchanged between the two adapters,we need to crack it in order to get the          password.
+   After opening up the handshake we identify the wpa key data which was exchanged between the two adapters,we need to crack it in order to get the            password.
    These commands were used on kali accessing the wordlist in rockyou.txt to bruteforce the password:
       Command aircrack -ng <handshake_filename> -w /usr/share/wordlist/rockyou.txt
       The result of the brute force will give u the password that we seek for the secret wifi.
@@ -78,12 +79,14 @@ Learned: What an IRC is.
    
 ## DOZ3N_IS_K3Y
    I used grep with flag on the string and got an encrypted file, which we decrypted to get the flag.
-    Learned:  
+   
+   Learned:  
             To use grep command in linux.
             To decrypt caeser text.
    
 ## xoring
    In it I used the python base code which was given and altered it to give the xored output.
+   
    Learned:
          What xoring is.
          How xoring encryption works.
@@ -93,18 +96,22 @@ Learned: What an IRC is.
    Decrypted it using spoon dcode.
    
    Learned:
-     Basic working of spoon cipher.
+           Basic working of spoon cipher.
    
 ## Caesercipher
   I identified the cipher to be caeser cipher using a cipher identifier.
   Decrypted it using ceaser decoder.
  
- Learned: How caeser cipher operates.
+ Learned: 
+         How caeser cipher operates.
  
 ## da_french_cipher
 
   I identified the cipher, vigenere cipher .
-  DEcrypted the encrypted text using vigenere decoder.
+  Decrypted the encrypted text using vigenere decoder.
+  
+  Learned:
+          Vigenere cipher basics.
   
   
  
