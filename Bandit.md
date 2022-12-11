@@ -73,15 +73,24 @@ P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 
 ## LEVEL 6 --> 7
-cd ../..
-find ./ -group bandit6 -user bandit7 -size 33c
-found  ./var/lib/dpkg/info/bandit7.password
+#### The motive of this level is to access a file with some specific characteristics.
+login: ssh bandit6@bandit.labs.overthewire.org -p 2220
+find / -type f -user bandit7 -group bandit6 -size 33c 2> /dev/null (here we specified the characteristics and 2>/dev/null redirects errors to the void)
+./var/lib/dpkg/info/bandit7.password
 cat ./var/lib/dpkg/info/bandit7.password
+z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
-## LEVEL 0 --> 1
+## LEVEL 7 --> 8
+#### The motive of this level is to use grep and cat simultaneously.
+login: ssh bandit7@bandit.labs.overthewire.org -p 2220
+ls to list the files in the cwd.
 cat data.txt | grep millionth
+####Here what we did was use the piping operator which can redirect the output of one command to the next.
+TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 
-## LEVEL 0 --> 1
+
+## LEVEL 8 --> 9
+#### The motive of this level is to find the line taht only repeates once.
 ls
 sort data.txt | uniq -u
 
