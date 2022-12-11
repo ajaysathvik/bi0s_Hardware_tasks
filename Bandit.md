@@ -8,7 +8,7 @@ So we use the command:<br />
 We specify the username@host.server<br />
 -p is for specifiying the port.<br />
  
- ####Learned:<br />
+ #### Learned:<br />
        _Format for using ssh._<br />
 
 ## LEVEL 0 --> 1
@@ -21,7 +21,7 @@ ls<br />
 cat readme.txt<br />
 NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL<br />
 
-####Learned:<br />
+#### Learned:<br />
 ls , cat commands.
 
 
@@ -35,7 +35,7 @@ ls<br />
 cat ./-<br />
 rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi<br />
 
-####Learned:<br />
+#### Learned:<br />
 ./ command executes the file
 
 ## LEVEL 2 --> 3
@@ -49,7 +49,7 @@ ls<br />
 cat spaces\ in\ this\ filename<br />
 aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG<br />
 
-####Learned:<br />
+#### Learned:<br />
 Forward slashes before a space in a filename with spaces can void the error while using the file.
 
 ## LEVEL 3 --> 4
@@ -61,7 +61,7 @@ ls -a (to find the hidden file.)<br />
 cat .hidden (where the . specifies that the file is hidden)<br />
 2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe<br />
 
-####Learned:<br />
+#### Learned:<br />
 How to view and open a hidden file.
 
 ## LEVEL 4 --> 5
@@ -74,7 +74,7 @@ We see that only one file is in the ascii text format.<br />
 cat ./-file07 to see the password.<br />
 lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR<br />
 
-####Learned:<br />
+#### Learned:<br />
 Working of file command.<br />
 Astar key is used to select all.<br />
 
@@ -88,9 +88,9 @@ find -readable -size 1033c ! -executable (to find a readable file with size 1033
 cat maybehere07/.file2<br />
 P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU<br />
 
-####Learned:<br />
-Find command use.
-How to find a specific file.
+#### Learned:<br />
+     Find command use.
+     How to find a specific file.
 
 ## LEVEL 6 --> 7
 #### The motive of this level is to access a file with some specific characteristics.
@@ -100,8 +100,8 @@ find / -type f -user bandit7 -group bandit6 -size 33c 2> /dev/null (here we spec
 cat ./var/lib/dpkg/info/bandit7.password<br />
 z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S<br />
 
-####Learned:<br />
-How to find a specific file.
+#### Learned:<br />
+     How to find a specific file.
 
 ## LEVEL 7 --> 8
 #### The motive of this level is to use grep and cat simultaneously.
@@ -111,8 +111,8 @@ cat data.txt | grep millionth<br />
 ####Here what we did was use the piping operator which can redirect the output of one command to the next.<br /><br />
 TESKZC0XvTetK0S9xNwm25STk5iWrBvP<br />
 
-####Learned:<br />
-grep command  and piping.
+#### Learned:<br />
+     grep command  and piping.
 
 ## LEVEL 8 --> 9
 #### The motive of this level is to find the line that only repeates once.
@@ -122,9 +122,9 @@ sort data.txt | uniq -u <br />
  sort command sorts the text in data.txt and after that we use uniq -u here uniq command removes the repeated lines by default while the -u option only retrieves the unique line.<br />
 EN632PlfYiZbn3PhVK3XOGSlNInNE00t<br />
 
-####Learned:<br />
-sort command to sort the file.<br />
-uniq -u command to get a unique non-reccuring line of text.<br />
+#### earned:<br />
+     sort command to sort the file.<br />
+     uniq -u command to get a unique non-reccuring line of text.<br />
 
 ## LEVEL 9 --> 10
 #### The motive of this level is to find the only human-readable strings in the string preceded by many "=". 
@@ -134,9 +134,9 @@ cat data.txt | strings data.txt | grep "="<br />
 Strings command brings out the only readable strings in the file data.txt and grep is used to get the text which is preceded by =.<br />
 G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s<br />
 
-####Learned:<br />
-More piping.
-String command useage.
+#### Learned:<br />
+     More piping.
+     String command useage.
 
 ## LEVEL 10 --> 11
 #### The motive of this level is to decode the base64 encrypted text.
@@ -147,8 +147,8 @@ base64 -d data.txt <br />
 Here -d option specifies 'Decode'.<br />
 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM<br />
 
-####Learned:<br />
-How to decode base64 encryption using linux terminal.
+#### Learned:<br />
+     How to decode base64 encryption using linux terminal.
 
 ## LEVEL 11 --> 12
 #### The motive of this level is to decode a ROT13 cipher encrypted text to obtain the password.
@@ -160,8 +160,8 @@ cat random.txt | tr "[a-z][A-Z]" "[n-za-m][N-ZA-M]"<br />
 tr short for transilate converts a specified convention to another order)<br />
 JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv<br />
 
-####Learned:<br />
-tr or translate commands usage.
+#### Learned:<br />
+     tr or translate commands usage.
 
 ## LEVEL 12 --> 13
 #### The motive of this level is to create a directory under tmp(a.k.a temporary) and uncompress a multiple time compressed file using various uncompressions.
@@ -204,9 +204,9 @@ file dark_schnider -->dark_schnider ascii text<br />
 cat dark_schnider<br />
 The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw<br />
 
-####Learned:<br />
-xxd -r command to covert a hexadump file to bin file.<br />
-How to uncompress different types of files.<br />
+#### Learned:<br />
+    xxd -r command to covert a hexadump file to bin file.<br />
+    How to uncompress different types of files.<br />
 
 
 ## LEVEL 13 --> 14
@@ -217,9 +217,9 @@ ssh bandit14@localhost -i sshkey.private -p 2220<br />
 cat /etc/bandit_pass/bandit14<br />
 fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq<br />
 
-####Learned:<br />
-How to port to a server while in another server using ssh.<br />
-It requires the rsa encrypted private key of the other server.<br />
+#### Learned:<br />
+    How to port to a server while in another server using ssh.<br />
+    It requires the rsa encrypted private key of the other server.<br />
 
 ## LEVEL 14 --> 15
 #### The motive of this level is to submit the password of current level to port 30000 of localhost.
@@ -229,8 +229,8 @@ Enter the password of the previous level.<br />
 Telnet is an application network protocol enables user communication with a remote computer via a text-based interface.<br />
 jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt<br />
 
-####Learned:<br />
-Telnet command.
+#### Learned:<br />
+    Telnet command.
 
 ## LEVEL 14 --> 15
 #### The motive of this level is to port to 30001 on localhost
@@ -238,8 +238,8 @@ openssl s_client -connect localhost:30001<br />
 Enter the password of the current level.<br /><br />
 JQttfApK4SeyHwDlI9SXGR50qclOAil1<br />
 
-####Learned:<br />
-openssl , s_client commands on terminal.
+#### Learned:<br />
+     openssl , s_client commands on terminal.
 
 
 
