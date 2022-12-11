@@ -48,24 +48,31 @@ ls (to list the files in the cwd.)
 cd (to change the cwd to the inhere directory.)
 ls -a (to find the hidden file.)
 cat .hidden (where the . specifies that the file is hidden)
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
 
 ## LEVEL 4 --> 5
 #### The motive of this level is to access the ony human-readable file in the inhere directory.
 login: ssh bandit4@bandit.labs.overthewire.org -p 2220
 ls to list the files in the cwd. 
+cd inhere to change cwd. 
+file ./* to exe all(*) the files and find the file type.
+We see that only one file is in the ascii text format.
+cat ./-file07 to see the password.
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+
+## LEVEL 5 --> 6
+#### The motive of this level is to access a file with some specific characteristics.
+login: ssh bandit5@bandit.labs.overthewire.org -p 2220
+ls to list the files in the cwd.
 cd inhere to change cwd.
-file * 
-file ./*
-cat ./-file07
-
-## LEVEL 0 --> 1
-ls
-cd inhere
-ls
-ls -al * | grep -B 10 1033
+ls to list the files in the cwd.
+find -readable -size 1033c ! -executable (to find a readable file with size 1033bytes which is not executable.)
 cat maybehere07/.file2
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
-## LEVEL 0 --> 1
+
+## LEVEL 6 --> 7
 cd ../..
 find ./ -group bandit6 -user bandit7 -size 33c
 found  ./var/lib/dpkg/info/bandit7.password
