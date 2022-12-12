@@ -108,7 +108,7 @@ z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S<br />
 login: ssh bandit7@bandit.labs.overthewire.org -p 2220<br />
 ls to list the files in the cwd.<br />
 cat data.txt | grep millionth<br />
-####Here what we did was use the piping operator which can redirect the output of one command to the next.<br /><br />
+#### Here what we did was use the piping operator which can redirect the output of one command to the next.<br /><br />
 TESKZC0XvTetK0S9xNwm25STk5iWrBvP<br />
 
 #### Learned:<br />
